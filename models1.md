@@ -38,3 +38,26 @@ Movie                       movies
 Octopus                     octopi
 Mouse                       mice
 ```
+
+```
+class Flight < ApplicationRecord`
+end
+
+class Person < ApplicationRecord
+end
+```
+TABLE: **flights**
+
+|id|origin|departure_time|destination|flight_number|miles_earned|
+|--|------|--------------|-----------|-------------|------------|
+|14|ORD|9:40 am|JFK|133|705|
+|15|LAX|12:19 pm|STL|501|1104|
+|16|SEA|7:53 pm|SFO|242|489|
+
+TABLE: **people**
+
+|id|first_name|last_name|email|hobby|
+|--|------|--------------|------------|------|
+|26|Cookie|Monster|cookie@example.com|Eating cookies|
+|27|Margaret|Hamilton|margaret@example.com|Building software|
+|28|Alan|Turing|alan@example.com|Decryption|
