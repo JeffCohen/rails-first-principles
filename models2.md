@@ -1,4 +1,4 @@
-# Rails Models, Part 2
+# Defining Models
 
 Thanks to the `ez` gem, you can get your database up and running quickly, skipping the more formal `Migrations` functionality in Rails.
 
