@@ -28,9 +28,9 @@ Whenever you change `db/models.yml`, be sure to `rails db:migrate` to update you
 
 Here's an example of how all of these things relate to each other:
 
-```
+``` yml
 # db/models.yml
-Flight
+Flight:
   origin: text
   departure_time: time
   destination: text
@@ -38,9 +38,9 @@ Flight
   miles_earned: integer
 ```
 
-```
+``` ruby
 # app/models/flight.rb
-class Flight < ApplicationRecord`
+class Flight < ApplicationRecord
 end
 ```
 TABLE: **flights**
