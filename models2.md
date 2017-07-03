@@ -6,7 +6,7 @@ Thanks to the `ez` gem, you can get your database up and running quickly, skippi
 
 Your database schema will be generated automatically based on a description of your domain models.
 
-Each domain model is translated into two, specific, concrete artifacts:
+Each domain model is translated into two physical artifacts:
 
 1. A Ruby class derived from `ApplicationRecord`
 2. A table in a relational database
@@ -17,7 +17,7 @@ tables will live inside of this file.
 You will never touch this file directly.  Modifying the schema (tables and columns) and managing the data (rows) is all 
 done from Ruby.  
 
-**3-Step Recipe For Defining A Database-Backed Model**
+### 3-Step Recipe For Defining A Database-Backed Model
 
 1. If you don't have a file named `db/models.yml`, run `rails db:migrate` to generate it.
 2. Add the model definition to the `db/models.yml` file.
@@ -32,7 +32,7 @@ Rails provides a component called _ActiveRecord_ to provide easy database accces
 pattern in computer science called an _object-relational mapper_ (ORM): it connects an object-oriented programming language (like Ruby)
 to a relational database system (like SQLite3, Micosoft SQLServer, MySQL, Postgresql, Oracle, DB2, and more).
 
-* "Models" are simply Ruby classes that represent real-world things.
+* _Models_ are simply Ruby classes that represent real-world things.
 * In Rails, model files are expected to be in the `/app/models` folder.
 * Database-backed models must derive from ApplicationRecord:  `class Flight < ApplicationRecord`.
 * Model objects (instances) map to specific rows in the table, and object attributes map to specific column (cell) values.
