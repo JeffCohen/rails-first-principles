@@ -46,4 +46,32 @@ PATCH      UPDATE         /flights/:id         Update the details of a single fl
 DELETE     DELETE         /flights/:id         Remove a flight from the list
 ```
 
-> "In theory, theory and practice are the same; in practice, they are not."
+> "In theory, theory and practice are the same; in practice, they are not." -- Unknown Genius
+
+### The Golden 7
+
+We can establish a convention for handing every type of request to different MVC handlers:
+
+```
+VERB       DB OPERATION   URL                  Handler Action
+--------   ------------   ------------------   ---------------------------------------
+GET        READ           /flights             index
+GET        READ           /flights/:id         show
+GET                       /flights/new         new
+POST       CREATE         /flights             create
+GET                       /flights/:id/edit    edit
+PATCH      UPDATE         /flights/:id         update
+DELETE     DELETE         /flights/:id         destroy
+```
+
+Therefore, every resource your application provides will need (a maximum of) seven routes.  
+
+### The Grand Unified Theory of RESTful Development
+
+This leads directly to the following consequence when using an MVC architecture
+for web development:
+
+* Your web application is nothing more than a collection of _resources_
+* Each resource will be implemented by exactly one _controller_
+* Each controller will require (at most) seven _actions_
+* Each action may use one or more models to gather data for the corresponding _view_
