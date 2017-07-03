@@ -28,7 +28,7 @@ end
 and the `db/schema.rb` file should look something like this:
 
 ``` ruby
-ActiveRecord::Schema.define(version: 20140402002437) do
+ActiveRecord::Schema.define(version: 20170402002437) do
 
   create_table "books", force: true do |t|
     t.string  "title"
