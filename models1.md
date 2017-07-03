@@ -1,7 +1,5 @@
 ### Introduction to Models
 
-*Also: see the [cheat sheet](console_crud.md) for how to manipulate the database.*
-
 A _model_ is something that is a virtual representation of something else.  In a web application, a model is software represenation
 of a real-world thing.
 
@@ -39,8 +37,8 @@ Octopus                     octopi
 Mouse                       mice
 ```
 
-```
-class Flight < ApplicationRecord`
+``` ruby
+class Flight < ApplicationRecord
 end
 
 class Person < ApplicationRecord
