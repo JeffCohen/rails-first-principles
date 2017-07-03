@@ -15,7 +15,7 @@ By default, Rails will take care of constructing a SQLite3 database file for you
 tables will live inside of this file.
 
 You will never touch this file directly.  Modifying the schema (tables and columns) and managing the data (rows) is all 
-done from Ruby files.  Various Rails commands will translate your Ruby code into SQL and DDL statements as needed.
+done from Ruby.  
 
 **3-Step Recipe For Defining A Database-Backed Model**
 
