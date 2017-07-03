@@ -26,6 +26,28 @@ if necessary (see below).
 
 Whenever you change `db/models.yml`, be sure to `rails db:migrate` to update your database.
 
+Here's an example of how all of these things relate to each other:
+
+```
+# db/models.yml
+Flight
+  origin: text
+  departure_time: time
+  destination: text
+  flight_number: text
+  miles_earned: integer
+
+# app/models/flight.rb
+class Flight < ApplicationRecord`
+end
+```
+TABLE: **flights**
+
+|id|origin|departure_time|destination|flight_number|miles_earned|
+|--|------|--------------|-----------|-------------|------------|
+|14|ORD|9:40 am|JFK|133|705|
+|15|LAX|12:19 pm|STL|501|1104|
+|16|SEA|7:53 pm|SFO|242|489|
 ### Ruby Model Classes
 
 Rails provides a component called _ActiveRecord_ to provide easy database acccess.  ActiveRecord adheres to a particular
