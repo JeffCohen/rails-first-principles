@@ -36,7 +36,9 @@ Flight
   destination: text
   flight_number: text
   miles_earned: integer
+```
 
+```
 # app/models/flight.rb
 class Flight < ApplicationRecord`
 end
